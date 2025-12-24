@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -427,55 +428,7 @@ export default function Home() {
             </p>
           </div>
 
-          <form className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-[#F4F3EF] text-sm font-medium mb-2">Naam *</label>
-              <input
-                id="name"
-                type="text"
-                required
-                className="w-full bg-[#2E2E2E] border border-[#BDBDB8]/30 rounded-lg px-4 py-3 text-[#F4F3EF] text-sm focus:outline-none focus:border-[#3A7BFF] transition-colors"
-                placeholder="Je naam"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-[#F4F3EF] text-sm font-medium mb-2">E-mail *</label>
-              <input
-                id="email"
-                type="email"
-                required
-                className="w-full bg-[#2E2E2E] border border-[#BDBDB8]/30 rounded-lg px-4 py-3 text-[#F4F3EF] text-sm focus:outline-none focus:border-[#3A7BFF] transition-colors"
-                placeholder="je@email.nl"
-              />
-            </div>
-            <div>
-              <label htmlFor="phone" className="block text-[#F4F3EF] text-sm font-medium mb-2">Telefoon</label>
-              <input
-                id="phone"
-                type="tel"
-                className="w-full bg-[#2E2E2E] border border-[#BDBDB8]/30 rounded-lg px-4 py-3 text-[#F4F3EF] text-sm focus:outline-none focus:border-[#3A7BFF] transition-colors"
-                placeholder="06 12345678"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-[#F4F3EF] text-sm font-medium mb-2">Bericht *</label>
-              <textarea
-                id="message"
-                required
-                rows={5}
-                maxLength={500}
-                className="w-full bg-[#2E2E2E] border border-[#BDBDB8]/30 rounded-lg px-4 py-3 text-[#F4F3EF] text-sm focus:outline-none focus:border-[#3A7BFF] transition-colors resize-none"
-                placeholder="Vertel ons over je interesse in Werkplaats 5..."
-              />
-              <p className="text-[#BDBDB8] text-xs mt-2">Maximaal 500 tekens</p>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-[#F4F3EF] text-[#111111] px-10 py-4 rounded-lg text-base font-medium hover:bg-[#3A7BFF] hover:text-[#F4F3EF] transition-all"
-            >
-              Let&apos;s go →
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </section>
 
