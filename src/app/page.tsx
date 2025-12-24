@@ -157,7 +157,7 @@ export default function Home() {
                   { title: "Gigabit internet", desc: "Download AI-modellen, push naar cloud — geen wachten" },
                   { title: "Deep work omgeving", desc: "Ontworpen voor flow state, niet voor small talk" },
                   { title: "AI Knowledge Sessions", desc: "Wekelijkse deep-dives in de nieuwste AI-tools en workflows" },
-                  { title: "Sparren met AI-builders", desc: "Direct feedback van mensen die dezelfde tools gebruiken" },
+                  { title: "Receptie & post", desc: "Professionele ontvangst voor je klanten en pakketservice" },
                   { title: "Ship-mentaliteit", desc: "Hier wordt gebouwd. Elke dag. Geen excuses." },
                 ].map((item, index) => (
                   <div key={index} className="group bg-[#F4F3EF] border border-[#BDBDB8]/30 rounded-lg p-6 hover:border-[#3A7BFF] transition-all cursor-pointer">
@@ -315,6 +315,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Community */}
+      <section id="community" className="bg-[#111111] py-24">
+        <div className="max-w-[1400px] mx-auto px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="mb-6">
+                <span className="text-[#BDBDB8] text-sm font-medium tracking-wide uppercase">Netwerk</span>
+                <div className="w-12 h-0.5 bg-[#3A7BFF] mt-2"></div>
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#F4F3EF] mb-6 leading-tight">
+                Onderdeel van iets groters
+              </h2>
+              <p className="text-[#F4F3EF]/80 text-lg leading-relaxed mb-8">
+                De Nieuwe Energie is meer dan een gebouw. Het is een community van <strong className="text-[#F4F3EF]">65+ bedrijven</strong> en <strong className="text-[#F4F3EF]">175+ professionals</strong> die hier dagelijks werken, innoveren en groeien.
+              </p>
+              <p className="text-[#F4F3EF]/80 text-lg leading-relaxed">
+                Van startup founders tot gevestigde consultants. Van creative agencies tot tech companies. Je buren zijn net zo ambitieus als jij.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-[#2E2E2E] rounded-xl p-6 border border-[#BDBDB8]/10">
+                <div className="text-3xl mb-3">🎉</div>
+                <h4 className="text-[#F4F3EF] font-medium mb-2">Community Events</h4>
+                <p className="text-[#F4F3EF]/70 text-sm">Zomer-BBQs, kerstlunches, wine tastings, seminars</p>
+              </div>
+              <div className="bg-[#2E2E2E] rounded-xl p-6 border border-[#BDBDB8]/10">
+                <div className="text-3xl mb-3">🍽️</div>
+                <h4 className="text-[#F4F3EF] font-medium mb-2">Restaurant</h4>
+                <p className="text-[#F4F3EF]/70 text-sm">Lunch en koffie in het gebouw. Geen reden om te vertrekken.</p>
+              </div>
+              <div className="bg-[#2E2E2E] rounded-xl p-6 border border-[#BDBDB8]/10">
+                <div className="text-3xl mb-3">🔑</div>
+                <h4 className="text-[#F4F3EF] font-medium mb-2">24/7 Toegang</h4>
+                <p className="text-[#F4F3EF]/70 text-sm">Nachtbraker? Early bird? Jij bepaalt wanneer je werkt.</p>
+              </div>
+              <div className="bg-[#2E2E2E] rounded-xl p-6 border border-[#BDBDB8]/10">
+                <div className="text-3xl mb-3">☀️</div>
+                <h4 className="text-[#F4F3EF] font-medium mb-2">300 Zonnepanelen</h4>
+                <p className="text-[#F4F3EF]/70 text-sm">Grootste installatie van Leiden. Groene energie voor je AI-workloads.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Locatie */}
       <section id="location" className="bg-[#F4F3EF]">
         <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -337,14 +382,27 @@ export default function Home() {
                 <div className="w-12 h-0.5 bg-[#3A7BFF] mt-2"></div>
               </div>
               <h2 className="text-3xl font-bold text-[#F4F3EF] mb-8">Werkplaats 5</h2>
-              <div className="space-y-2 mb-8">
+              <div className="space-y-2 mb-6">
                 <p className="text-[#F4F3EF] text-xl leading-relaxed">Unit 5, De Nieuwe Energie</p>
                 <p className="text-[#F4F3EF] text-xl leading-relaxed">3e Binnenvestgracht 23</p>
                 <p className="text-[#F4F3EF] text-xl leading-relaxed">2312 NR Leiden</p>
               </div>
-              <p className="text-[#BDBDB8] text-base mb-8 leading-relaxed">
-                Goed bereikbaar en onderdeel van een professionele werkomgeving.
-              </p>
+
+              <div className="space-y-3 mb-8">
+                <div className="flex items-center gap-3">
+                  <span className="text-[#3A7BFF]">🚶</span>
+                  <span className="text-[#F4F3EF]/90 text-base">6 minuten lopen vanaf Leiden Centraal</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-[#3A7BFF]">🌳</span>
+                  <span className="text-[#F4F3EF]/90 text-base">Direct aan het Singelpark</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-[#3A7BFF]">🅿️</span>
+                  <span className="text-[#F4F3EF]/90 text-base">Parkeergarages Lammermarkt & De Kooi op loopafstand</span>
+                </div>
+              </div>
+
               <a
                 href="https://www.google.com/maps/search/3e+Binnenvestgracht+23+Leiden"
                 target="_blank"
