@@ -26,7 +26,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center pt-[70px]">
         <div className="absolute inset-0">
           <Image
-            src="/hero.jpg"
+            src="/Impressie-UNIT-Nieuwe-Energie-Leiden-07.jpg"
             alt="Werkplaats 5 Interior"
             fill
             className="object-cover object-center"
