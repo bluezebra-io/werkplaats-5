@@ -432,7 +432,10 @@ export default function Home() {
                 </div>
                 <span className="text-[#F4F3EF] text-lg font-medium">Werkplaats 5</span>
               </div>
-              <p className="text-[#BDBDB8] text-sm leading-relaxed">AI-werkplekken in De Nieuwe Energie, Leiden</p>
+              <p className="text-[#BDBDB8] text-sm leading-relaxed">
+                AI-werkplekken in De Nieuwe Energie, Leiden.<br />
+                Onderdeel van <a href="https://www.bluezebra.nl" target="_blank" rel="noopener noreferrer" className="text-[#3A7BFF] hover:underline">BlueZebra</a>
+              </p>
             </div>
             <div>
               <h4 className="text-[#F4F3EF] text-base font-medium mb-4">Navigatie</h4>
